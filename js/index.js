@@ -5,7 +5,7 @@ var productDescInput = document.getElementById("productDescInput");
 var productsContainer = [];
 var productIndex = 0;
 
-if(localStorage != null) {
+if(localStorage.getItem("product") != null) {
   productsContainer = JSON.parse(localStorage.getItem("product"));
   displayProducts();
 }
